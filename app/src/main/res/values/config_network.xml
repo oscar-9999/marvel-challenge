@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Ports and timeouts configuration -->
+    <integer name="connectionTimeout">45</integer>
+    <integer name="socketTimeout">45</integer>
+
+</resources>

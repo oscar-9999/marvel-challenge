@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MCOpenBank" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.MarvelChallenge" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -12,5 +12,57 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.MarvelChallenge.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MarvelChallenge.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MarvelChallenge.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextSplash">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_24</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextChacterTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_14</item>
+    </style>
+
+    <style name="TextCharacterYearDirector">
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:textSize">@dimen/font_13</item>
+    </style>
+
+    <style name="TextCharacterRate">
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:textSize">@dimen/font_12</item>
+    </style>
+
+    <style name="TextDetailsCharacterTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_24</item>
+    </style>
+
+    <style name="TextDetailsCharacterBase">
+        <item name="android:textSize">@dimen/font_14</item>
+    </style>
+
+
+    <style name="TextDetailsCharacterDirector" parent="TextDetailsCharacterBase">
+        <item name="android:textColor">@color/light_grey2</item>
+    </style>
+
+    <style name="TextDetailsCharacterDateDuration" parent="TextDetailsCharacterBase">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextDetailsCharacterDescription" parent="TextDetailsCharacterBase">
+        <item name="android:textColor">@color/light_grey3</item>
     </style>
 </resources>
