@@ -41,7 +41,6 @@ class CharactersListFragment :
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//        (activity as AppCompatActivity).supportActionBar?.hide()
         navController = view.findNavController()
         initLiveData()
         initToolbar()
