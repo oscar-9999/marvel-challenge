@@ -102,6 +102,7 @@ class CharactersListFragment :
                 successListCharacters(viewModelState.value)
             }
             is ViewModelState.ApiError -> {
+                hideLoading()
                 showError(viewModelState.message)
             }
             is ViewModelState.DefaultError -> {

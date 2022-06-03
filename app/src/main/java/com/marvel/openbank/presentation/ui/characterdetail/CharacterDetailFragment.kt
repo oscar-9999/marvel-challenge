@@ -53,6 +53,7 @@ class CharacterDetailFragment :
                 fillCharactersDetails(viewModelState.value)
             }
             is ViewModelState.ApiError -> {
+                hideLoading()
                 showError(viewModelState.message)
             }
             is ViewModelState.DefaultError -> {
