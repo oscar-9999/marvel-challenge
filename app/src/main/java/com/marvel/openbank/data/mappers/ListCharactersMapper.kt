@@ -1,10 +1,10 @@
 package com.marvel.openbank.data.mappers
 
 import com.marvel.openbank.data.api.response.characters.ServerCharactersResponse
-import com.marvel.openbank.domain.model.characters.*
 import com.marvel.openbank.data.api.response.characters.ServerResult
 import com.marvel.openbank.data.api.response.characters.ServerThumbnail
 import com.marvel.openbank.data.api.response.characters.ServerUrl
+import com.marvel.openbank.domain.model.characters.*
 
 
 fun ServerCharactersResponse.toDomain() = ListCharactersModel(
@@ -15,6 +15,7 @@ fun ServerResult.toServerResultDomain(): ResultCharacterModel {
     return ResultCharacterModel(
         id = id,
         name = name,
+        description = description,
         thumbnail = thumbnail.toServerThumbnailDomain(),
         urls = urls.toServerUrlDomain()
     )

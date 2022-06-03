@@ -108,8 +108,14 @@ class CharacterDetailFragment :
         if (resultCharacterModel.urls.urls.isNotEmpty()) {
             binding.tvDetailTitle.visibility = View.VISIBLE
             binding.tvUrlDetailLink.visibility = View.VISIBLE
-            binding.tvUrlDetailLink.text = resultCharacterModel.urls.urls[0].url
-            binding.tvUrlDetailLink.movementMethod = LinkMovementMethod.getInstance()
+
+            if(resultCharacterModel.description.isNullOrEmpty()){
+                binding.tvUrlDetailLink.text = resultCharacterModel.urls.urls[0].url
+                binding.tvUrlDetailLink.movementMethod = LinkMovementMethod.getInstance()
+            } else {
+                binding.tvUrlDetailLink.text = resultCharacterModel.description
+            }
+
         } else {
             binding.tvDetailTitle.visibility = View.GONE
             binding.tvUrlDetailLink.visibility = View.GONE
