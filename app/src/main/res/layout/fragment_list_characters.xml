@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/toolbar" />
+    <include layout="@layout/toolbar" android:id="@+id/lToolbar"/>
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/srListCharacters"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clToolbar">
+        app:layout_constraintTop_toBottomOf="@+id/lToolbar">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvListCharacters"
