@@ -33,8 +33,7 @@ open class FailureFactory {
                 val errorCode: Int = error.status
 
                 return when (code) {
-                    400 -> RequestFailure.InvalidRequest(errorCode, errorMessage)
-                    401 -> RequestFailure.TokenExpired(errorCode, errorMessage)
+                    400,401 -> RequestFailure.InvalidRequest(errorCode, errorMessage)
                     404 -> RequestFailure.NotFound(errorCode, errorMessage)
                     500 -> RequestFailure.InternalError(errorCode, errorMessage)
                     502 -> RequestFailure.BadGateway(errorCode, errorMessage)

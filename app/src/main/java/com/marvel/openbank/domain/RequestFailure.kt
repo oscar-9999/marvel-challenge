@@ -4,7 +4,6 @@ import java.io.Serializable
 
 sealed class RequestFailure(val statusCode: Int, var message: String) : Serializable {
     class InvalidRequest(statusCode: Int, message: String) : RequestFailure(statusCode, message)
-    class TokenExpired(statusCode: Int, message: String) : RequestFailure(statusCode, message)
     class NotFound(statusCode: Int, message: String) : RequestFailure(statusCode, message)
     class InternalError(statusCode: Int, message: String) : RequestFailure(statusCode, message)
     class BadGateway(statusCode: Int, message: String) : RequestFailure(statusCode, message)

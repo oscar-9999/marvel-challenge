@@ -22,7 +22,7 @@ class DataRepositoryImpl(private val apiService: APIService) : DataRepository {
     ): Flow<ResultOf<ListCharactersModel>> =
         flow {
             emit(
-                apiService.getCharacterDescription(characterId = characterId, ts, apikey, hash)
+                apiService.getCharacterDetails(characterId = characterId, ts, apikey, hash)
                     .safeCall({ response -> response.toDomain() })
             )
         }.catch {

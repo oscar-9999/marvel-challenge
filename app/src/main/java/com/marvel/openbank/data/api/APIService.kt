@@ -24,7 +24,7 @@ interface APIService {
 
     @Headers(CONTENT_TYPE, ACCEPT)
     @GET("v1/public/characters/{characterId}")
-    suspend fun getCharacterDescription(
+    suspend fun getCharacterDetails(
         @Path("characterId") characterId: Int,
         @Query("ts") ts: String,
         @Query("apikey") apikey: String,
