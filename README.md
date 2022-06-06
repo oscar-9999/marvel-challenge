@@ -28,7 +28,7 @@
 
 -I'm calling MARVEL API in the app, calling the API for incremental pagination when the characters list is scrolled down
 
--I've done some unit tests on data layer using Junit, Mockito and MockWebServer
+-I've done some unit tests on domain and layers using Junit, Mockito and MockWebServer
 
 
 ![image](https://drive.google.com/uc?export=view&id=1k_V1TywVJ1NndBbmp09FY95YcjvH3HPL)
