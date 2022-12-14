@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.marvel.openbank">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.marvel.openbank.MarvelApplication"
+        android:name="com.marvel.inditex.MarvelApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,7 +14,7 @@
         android:theme="@style/Theme.MarvelChallenge"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.marvel.openbank.presentation.ui.main.MainActivity"
+            android:name="com.marvel.inditex.presentation.ui.main.MainActivity"
             android:theme="@style/Theme.MarvelChallenge.NoActionBar"
             android:exported="true">
             <intent-filter>

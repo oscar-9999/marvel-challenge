@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Marvel Openbank Mobile Test"
+rootProject.name = "Marvel Inditex Mobile Test"
 include ':app'

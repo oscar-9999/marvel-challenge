@@ -5,10 +5,10 @@
 ### Versions
 
  - Min Api: **23**
- - Api Target: **32**
- - BuildTools: **32**
- - Kotlin: **1.5.30**
- - Gradle: **7.2.0**
+ - Api Target: **33**
+ - BuildTools: **33**
+ - Kotlin: **1.6.10**
+ - Gradle: **7.4.0**
 
 ### Main libraries
 
